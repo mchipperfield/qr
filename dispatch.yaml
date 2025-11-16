@@ -3,6 +3,6 @@ dispatch:
 - url: "qrcode.matthewchipperfield.com/*"
   service: qrcode
 
-- url: "qrcode.goaferlx.com/*"
+- url: "qrcode.matthewchipperfield.dev/*"
   service: qrcode
 
