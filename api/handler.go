@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/goaferlx/qr"
 	"github.com/gorilla/mux"
+	"github.com/mchipperfield/qr"
 	"golang.org/x/exp/slog"
 )
 

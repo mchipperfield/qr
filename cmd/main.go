@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/felixge/httpsnoop"
-	"github.com/goaferlx/qr"
-	"github.com/goaferlx/qr/api"
 	"github.com/gorilla/mux"
+	"github.com/mchipperfield/qr"
+	"github.com/mchipperfield/qr/api"
 	"golang.org/x/exp/slog"
 )
 

@@ -1,6 +1,6 @@
-module github.com/goaferlx/qr
+module github.com/mchipperfield/qr
 
-go 1.20
+go 1.25
 
 require (
 	github.com/boombuler/barcode v1.0.1
