@@ -68,8 +68,8 @@ func main() {
 	}
 
 	router := mux.NewRouter().StrictSlash(true)
-	router.Path("/").Handler(qr.NewHandler(logger))
 	router.PathPrefix("/v1/").Handler(http.StripPrefix("/v1", api.NewHandler(logger)))
+	router.PathPrefix("/").Handler(qr.NewHandler(logger))
 	srv := http.Server{
 		Addr:         fmt.Sprintf(":%d", *port),
 		Handler:      mw(router),

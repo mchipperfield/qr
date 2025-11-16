@@ -56,7 +56,7 @@ func (h *Handler) generateCode() http.HandlerFunc {
 			return
 		}
 
-		encodedQR, err := GenerateCode(r.Context(), CodeRequest{Text: r.PostFormValue("text"), DataType: r.PostFormValue("data_type")})
+		encodedQR, err := GenerateGopherCode(r.Context(), CodeRequest{Text: r.PostFormValue("text"), DataType: r.PostFormValue("data_type")})
 		if err != nil {
 			h.logger.Info("failed to generate QR Code", "error", err)
 			w.WriteHeader(http.StatusInternalServerError)

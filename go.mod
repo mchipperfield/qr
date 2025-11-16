@@ -8,4 +8,7 @@ require (
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1
 )
 
-require github.com/felixge/httpsnoop v1.0.1
+require (
+	github.com/felixge/httpsnoop v1.0.1
+	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
+)
